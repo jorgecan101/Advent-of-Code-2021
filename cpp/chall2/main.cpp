@@ -48,10 +48,8 @@ int part2() {
     while (myFile >> command >> num) {
         if (command == "forward") {
             horizontal+= num;
-            if (aim == 0) continue;
             int temp = aim * num;
             vertical += temp;
-
         }
         else if (command == "down") {
             aim+= num;
